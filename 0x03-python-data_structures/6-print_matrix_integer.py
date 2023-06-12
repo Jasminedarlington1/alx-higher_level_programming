@@ -2,11 +2,11 @@
 def print_matrix_integer(matrix=[[]]):
     a = 1
     for row in matrix:
-        for s in row:
+        for number in row:
             if a % 3 != 0:
-            print('{:d}'.format(s), end=" "])
+            print('{:d}'.format(number), end=""])
         else:
-             print('{:d}'.format(s), end="")
-             1 += 1
+             print('{:d}'.format(number), end="")
+             a += 1
         print()
 
