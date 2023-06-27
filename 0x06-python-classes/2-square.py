@@ -10,8 +10,8 @@ class Square:
         """Initializing the class square with size attribute"""
         self.__size = size
 
-        if type(size) is not a int:
+        if type(size) is not int:
             raise TypeError("size must be an integer")
 
         if size < 0:
-            raise ValueErrore("size must be >= 0")
+            raise ValueError("size must be >= 0")
