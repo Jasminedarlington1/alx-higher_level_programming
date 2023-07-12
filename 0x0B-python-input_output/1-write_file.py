@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-"""initializate"""
+"""This module defines a file-writing function."""
 
 
-def number_of_lines(filename=""):
-    """function that returns the number of lines of a text file"""
-
-    num = 0
-    with open(filename, encoding="utf-8") as f:
-        line = f.readlines()
-        num = len(line)
-    f.close()
-    return num
+def write_file(filename="", text=""):
+    """it writes a string to a UTF8 text file
+    """
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
